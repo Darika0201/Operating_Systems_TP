@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Input the integer a: "
+read a
+echo "Input the integer b: "
+read b
+declare -i div=$a/$b
+echo "The division of" $a/$b "=" $div

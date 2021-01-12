@@ -1,0 +1,12 @@
+#!/bin/bash
+
+read file;
+if test -f $file ;
+ then
+  echo "It is a regular file."
+elif test -d $file ;
+ then
+  echo "It is a directory."
+else
+ echo "Another type of file."
+fi

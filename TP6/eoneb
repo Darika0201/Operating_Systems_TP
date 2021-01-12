@@ -1,0 +1,4 @@
+#!/bin/bash
+
+y="Rani"
+echo "y = "$y

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+read -p "Input the real number a: " a
+read -p "Input the real number b: " b
+echo "Divition of" $a/$b :
+echo "scale=2;$a/$b" |bc

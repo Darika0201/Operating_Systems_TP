@@ -1,0 +1,19 @@
+#!/bin/bash
+
+while :; do
+ read -p "Input the name of file with extension: " file
+ ext=${file##*\.}
+ if [ $ext == "c" ]; then
+    echo "It is c file"
+ elif [ $ext == "txt" ]; then
+    echo "It is text file"
+ elif [ $ext == "sh" ]; then
+    echo "It is shell script"
+ elif [ $ext == "jpg" ]; then
+   echo "It is jpg file"
+ elif [ $ext == "png" ]; then
+   echo "It is png file"
+ else
+   echo "It must be directory or not type of file"
+ fi
+done 

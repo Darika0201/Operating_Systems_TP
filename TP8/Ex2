@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#today=$(date +'%Y'-'%m'-'%d');
+today=$(date +'%F');
+cd /home/darika/bin/Pictures
+for FILE in *.jpg; do
+  mv $FILE $today-$FILE
+done
+

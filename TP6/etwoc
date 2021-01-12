@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#echo "Input the real number a: "; read a
+#echo "Input the real number b: "; read b
+#OR
+
+read -p "Input the real number a: " a
+read -p "Input the real number b: " b
+
+#echo "scale=2 ;$a+$b" |bc
+#OR
+
+sum=`echo "$a+$b" |bc`
+echo "Summation of" $a + $b = $sum

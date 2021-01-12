@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ -e $1 ]; then
+  echo "$1 passwords are enabled.";
+fi
+if [ -x $1 ]; then
+  echo "You have permissions to edit $1";
+else
+  echo "You do NOT have permissions to edit $1"; 
+fi
+
+
+#if [ -x $1 ]; then
+#  echo "$1 passwords are enabled.";
+#fi
+#if [ -w $1 ]; then
+#  echo "You have permissions to edit $1";
+#else
+#  echo "You do NOT have permissions to edit $1"; 
+#fi

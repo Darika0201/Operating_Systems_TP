@@ -1,0 +1,4 @@
+#!/bin/bash
+
+read a b c
+echo "scale=2 ; $a$b$c " | bc

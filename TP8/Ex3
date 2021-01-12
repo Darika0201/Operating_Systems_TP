@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd /home/darika/bin/Folder
+today=$(date +'%F');
+read -p "Enter the file extension: " EXTENSION
+read -p "(Press enter for $today) "
+echo " "
+for FILE in *.$EXTENSION; do
+  echo "$FILE renamed to $today-$FILE"
+  mv $FILE $today-$FILE
+done
