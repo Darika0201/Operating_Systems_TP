@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd=$1
+
+file_count() {
+  ls $cd | wc -l
+}
+file_count

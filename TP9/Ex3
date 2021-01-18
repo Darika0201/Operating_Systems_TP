@@ -1,0 +1,18 @@
+#!/bin/bash
+
+string=$2
+
+lowercase() {
+  echo ${string,,}
+}
+uppercase() {
+  echo ${string^^}
+}
+
+if [[ $1 == "-l" ]]; then
+  lowercase
+elif [[ $1 ==  "-u" ]]; then
+  uppercase
+else
+ echo "Wrong Input"
+fi
